@@ -18,8 +18,39 @@ h1{
 nav{
     display: flex;
     justify-content: center;
-    font-weight: 12rem;
+    font-weight: 100;
+}
+nav a {
+    text-decoration: underline;
+    color: var(--background-color);
+    margin: 0rem 2rem 3rem 0rem;
+    font-size: 12rem;
 }
 nav a:hover{
     text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+}
+.graficos-container{
+    margin: 5rem;
+}
+.graficos-container_texto{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secundary-color) solid 2px;
+}
+span{
+    font-weight: bold;
+    color: var(--secundary-color);
 }

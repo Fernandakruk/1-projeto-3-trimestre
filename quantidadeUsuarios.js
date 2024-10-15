@@ -23,35 +23,37 @@ async function quantidadeUsuarios(){
 
 }
 const layout = {
-    plot_bgcolor: getsCSS('--bg-color'),
-    paper_bgcolor: getsCSS('--bg-color'),
+    plot_bgcolor: getcCSS('--bg-color'),
+    paper_bgcolor: getcCSS('--bg-color'),
     title: {
         text : 'Redes sociais com mais usuários no mundo',
         x: 0,
         font: {
-            color: getsCSS('--primary-color'),
-            family: getsCSS('--font'),
+            color: getcCSS('--primary-color'),
+            family: getcCSS('--font'),
             size: 30
         }
     },
         xaxis:{
             tickfont: {
-                color: getsCSS('--primary-color'),
+                color: getcCSS('--primary-color'),
                 size: 16,
-                family: getsCSS('--font')
+                family: getcCSS('--font')
 
             },
         title:{
             text: 'nome das redes sociais',
             font: {
-                color: getsCSS('--secundary-color')
+                color: getcCSS('--secundary-color')
             } 
         }
     },
     yaxis:{
-        title: {
+      title: {
         text:'bilhões de usuários ativos',
-        color: getsCSS('--secundary-color')
+        font: {
+        color: getcCSS('--secundary-color')
+           }
         }
     }
 
